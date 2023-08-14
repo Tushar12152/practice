@@ -11,6 +11,30 @@
         background-color: aqua;
         border-radius: 10px;
         padding:10px;
+        position:relative;
+        top:100px;
+        left:250px;
+     }
+     #section{
+        width:50%;
+        border:2px solid gray;
+        border-radius: 10px;
+        margin: 0 auto;
+        height:60vh;
+        margin-top: 150px;
+
+     }
+     #title{
+             text-align: center;
+             margin-top: 50px;
+             color:aqua;
+     }
+     #warning{
+        color:cadetblue;
+        text-align: center;
+        position:relative;
+        bottom:17px;
+        display:none;
      }
 </style>
 
@@ -19,8 +43,11 @@
 <body>
 
     <section id="section">
+        <h1 id="title">Please click 'lets dance' Button!</h1>
         <button id="btn">Lets Dance</button>
         <img id="gifImage" style="display: none;" src="mj.gif" alt="GIF Image">
+
+        <h3 id="warning"> Press your Browsers Reload Button for stop the dance!!</h3>
 
     </section>
        
@@ -34,6 +61,11 @@
 
              const view=document.getElementById('gifImage');
              view.style.display='block';
+
+             document.getElementById('title').style.display='none';
+             document.getElementById('warning').style.display='block';
+
+            
               
 
           })
