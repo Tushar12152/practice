@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+     #btn{
+        background-color: aqua;
+        border-radius: 10px;
+        padding:10px;
+     }
+</style>
+
+
+</head>
+<body>
+
+    <section id="section">
+        <button id="btn">Lets Dance</button>
+        <img id="gifImage" style="display: none;" src="mj.gif" alt="GIF Image">
+
+    </section>
+       
+       
+
+     <script>
+          document.getElementById('btn').addEventListener('click',function(){
+            let mySound = new Audio('06.mp3')
+             mySound.play()
+             document.getElementById('btn').style.display='none'
+
+             const view=document.getElementById('gifImage');
+             view.style.display='block';
+              
+
+          })
+     </script>  
+</body>
+</html>
